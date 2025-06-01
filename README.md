@@ -1,6 +1,6 @@
 # JS Motherboard
 
-A visually engaging, responsive web page showcasing a stylized motherboard layout using pure HTML and CSS.
+An interactive view helpful to understand and get to know a motherboard in all of its parts.
 
 ## 🔗 Live Demo
 
