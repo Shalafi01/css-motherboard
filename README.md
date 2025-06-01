@@ -16,8 +16,7 @@ Explore the live version here: [tomasoni-mobo.infinityfreeapp.com](https://tomas
 ## Technologies Used
 - HTML5
 - CSS3
+- JS
 
 ## Screenshots
 Include screenshots here to showcase the design.
-
-
