@@ -1,4 +1,4 @@
-# CSS Motherboard
+# JS Motherboard
 
 A visually engaging, responsive web page showcasing a stylized motherboard layout using pure HTML and CSS.
 
