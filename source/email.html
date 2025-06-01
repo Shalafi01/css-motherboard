@@ -1,0 +1,121 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title> MotherBoard </title>
+
+  <ul> 
+    <li class="dropdown">
+      <a href="index.html" class="dropbtn">Componenti</a>
+      <div class="dropdown-content">
+        <a href="cpu.html">Come installare una CPU</a>
+        <a href="ram.html">Come installare la RAM</a>
+        <a href="gpu.html">Come installare una GPU</a>
+        <a href="m2.html">Come installare un M.2</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="home2.html" class="dropbtn">Cavi e Alimentazione</a>
+      <div class="dropdown-content">
+        <a href="cavi.html#cpu">Alimentazione CPU</a>
+        <a href="cavi.html#fan">Alimentazione ventole</a>
+        <a href="cavi.html#mobo">Alimentazione mobo</a>
+        <a href="cavi.html#sata">Connettore SATA </a>
+        <a href="cavi.html#usb2">Connettore USB 2.0</a>
+        <a href="cavi.html#usb3">Connettore USB 3.0</a>
+        <a href="cavi.html#audio">Connettore audio</a>
+        <a href="cavi.html#pin">PIN case</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="home3.html" class="dropbtn">Altro</a>
+      <div class="dropdown-content">
+        <a href="connettori.html">Connettori</a>
+        <a href="altro.html#cmos">CMOS</a>
+        <a href="altro.html#reset">RESET</a>
+        <a href="altro.html#south">Southbridge</a>
+        <a href="altro.html#viti">Viti case</a>
+      </div>
+    </ul><br/><br/><br/>
+
+    <div class="down" style='position: fixed; right: 2px; top: 2px;'>
+      <input autocomplete="off" type="text" placeholder="Cerca.." size="31" id="myInput" onkeyup="filterFunction()">
+      <div id="myDropdown" class="dropcontent">       
+        <a href="cpu.html">CPU</a>
+        <a href="gpu.html">GPU</a>
+        <a href="ram.html">RAM</a>
+        <a href="m2.html">M.2</a>
+        <a href="cavi.html#cpu">Alimentazione CPU</a>
+        <a href="cavi.html#fan">Alimentazione ventole</a>
+        <a href="cavi.html#mobo">Alimentazione mobo</a>
+        <a href="cavi.html#sata">Connettore SATA</a>
+        <a href="cavi.html#usb2">Connettore USB 2.0</a>
+        <a href="cavi.html#usb3">Connettore USB 3.0</a>
+        <a href="cavi.html#audio">Connettore audio</a>
+        <a href="cavi.html#pin">PIN Case</a>
+        <a href="connettori.html#usb2">USB 2.0</a>
+        <a href="connettori.html#usb3">USB 3.0</a>
+        <a href="connettori.html#vga">VGA</a>
+        <a href="connettori.html#hdmi">HDMI</a>
+        <a href="connettori.html#din">DIN</a>
+        <a href="connettori.html#ethernet">ETHERNET</a>
+        <a href="connettori.html#audio">Scheda audio</a>
+        <a href="altro.html#cmos">CMOS</a>
+        <a href="altro.html#cmos">CMOS</a>
+        <a href="altro.html#reset">RESET</a>
+        <a href="altro.html#south">Southbridge</a>
+        <a href="altro.html#viti">Viti case</a>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myDropdown");
+        var y = document.getElementById("myInput").value;
+        if( y == "") x.style.display = "none";
+        else x.style.display = "block";
+      }
+
+      function filterFunction() {
+        myFunction();
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }  
+      }
+    </script>
+    <body>
+    <form name="formmail" method="post" action="https://formspree.io/tomasoni.nicola@gmail.com">
+
+      <label for="Nome">Nome e Cognome*</label><br/>
+      <input type="text" name="Nome" size="48" required><br/><br/>
+      
+      <label for="Messaggio">Messaggio*</label><br/>
+      <textarea name="Messaggio" cols=50 rows=20 required></textarea><br/><br/>
+
+      <label for="Email">Email (se desideri una risposta)</label><br/>
+      <input type="text" name="Email" size="48"><br/><br/>
+      
+      <label for="Voto">Che voto dai a questo sito?</label>
+      <select name="Voto">
+        <option value="Nessuno"> </option>
+        <option value="5/5">5/5</option>
+        <option value="4/5">4/5</option>
+        <option value="3/5">3/5</option>
+        <option value="2/5">2/5</option>
+        <option value="1/5">1/5</option>
+      </select><br/><br/>
+
+      <input type="submit" class="button" value="Invia messaggio">
+
+    </form>
+  </body>
+  </html>

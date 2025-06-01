@@ -1,0 +1,115 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title> MotherBoard </title>
+
+  <ul> 
+    <li class="dropdown active">
+      <a href="index.html" class="dropbtn">Componenti</a>
+      <div class="dropdown-content">
+        <a href="cpu.html">Come installare una CPU</a>
+        <a href="ram.html">Come installare la RAM</a>
+        <a href="gpu.html">Come installare una GPU</a>
+        <a href="m2.html">Come installare un M.2</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="home2.html" class="dropbtn">Cavi e Alimentazione</a>
+      <div class="dropdown-content">
+        <a href="cavi.html#cpu">Alimentazione CPU</a>
+        <a href="cavi.html#fan">Alimentazione ventole</a>
+        <a href="cavi.html#mobo">Alimentazione mobo</a>
+        <a href="cavi.html#sata">Connettore SATA </a>
+        <a href="cavi.html#usb2">Connettore USB 2.0</a>
+        <a href="cavi.html#usb3">Connettore USB 3.0</a>
+        <a href="cavi.html#audio">Connettore audio</a>
+        <a href="cavi.html#pin">PIN case</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="home3.html" class="dropbtn">Altro</a>
+      <div class="dropdown-content">
+        <a href="connettori.html">Connettori</a>
+        <a href="altro.html#cmos">CMOS</a>
+        <a href="altro.html#reset">RESET</a>
+        <a href="altro.html#south">Southbridge</a>
+        <a href="altro.html#viti">Viti case</a>
+      </div>
+    </ul><br/><br/><br/>
+
+    <div class="down" style='position: fixed; right: 2px; top: 2px;'>
+      <input autocomplete="off" type="text" placeholder="Cerca.." size="31" id="myInput" onkeyup="filterFunction()">
+      <div id="myDropdown" class="dropcontent">       
+        <a href="cpu.html">CPU</a>
+        <a href="gpu.html">GPU</a>
+        <a href="ram.html">RAM</a>
+        <a href="m2.html">M.2</a>
+        <a href="cavi.html#cpu">Alimentazione CPU</a>
+        <a href="cavi.html#fan">Alimentazione ventole</a>
+        <a href="cavi.html#mobo">Alimentazione mobo</a>
+        <a href="cavi.html#sata">Connettore SATA</a>
+        <a href="cavi.html#usb2">Connettore USB 2.0</a>
+        <a href="cavi.html#usb3">Connettore USB 3.0</a>
+        <a href="cavi.html#audio">Connettore audio</a>
+        <a href="cavi.html#pin">PIN Case</a>
+        <a href="connettori.html#usb2">USB 2.0</a>
+        <a href="connettori.html#usb3">USB 3.0</a>
+        <a href="connettori.html#vga">VGA</a>
+        <a href="connettori.html#hdmi">HDMI</a>
+        <a href="connettori.html#din">DIN</a>
+        <a href="connettori.html#ethernet">ETHERNET</a>
+        <a href="connettori.html#audio">Scheda audio</a>
+        <a href="altro.html#cmos">CMOS</a>
+        <a href="altro.html#cmos">CMOS</a>
+        <a href="altro.html#reset">RESET</a>
+        <a href="altro.html#south">Southbridge</a>
+        <a href="altro.html#viti">Viti case</a>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myDropdown");
+        var y = document.getElementById("myInput").value;
+        if( y == "") x.style.display = "none";
+        else x.style.display = "block";
+      }
+
+      function filterFunction() {
+        myFunction();
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }  
+      }
+    </script>
+    <body>
+<div class="center">
+<h1 style="color:red"> RAM - RANDOM ACCESS MEMORY </h1> <br/>
+L'installazione delle Ram &egrave sicuramente la pi&ugrave; immediata. 
+Vi sono sole due cose a cui far caso, la prima che i piedini laterali siano aperti al 
+momento dell'installazione, semplicemente premendo su questi per aprirli. Si noti 
+che che questi possono essere entrambi semovibili oppure che uno di questi sia fisso. <br/><br/>
+<img src="media/ram/slot.jpg" width=100%> <br/> <br/>
+A questo punto baster&agrave; identificare il verso corretto, reso univoco da un piccolo 
+pezzo di plastica posto in mezzo allo slot che dovr&agrave; combaciare con l'apposito buco
+sulla ram, come cerchiato in rosso. <br/><br/>
+<img src="media/ram/ram.jpg" width=100%> <br/> <br/>
+A questo punto baster&agrave; applicare un po' di pressione prima su un estremo e poi sull'
+altro fino ad udire un distindo *clic*. A questo punti i  piedini saranno tornati alla
+posizione iniziale e la Ram sar&agrave; installata. Nel caso ne dovessere esssere installata pi&ugrave; d'una, si raccomanda di installarle su
+slot del medesimo colore.<br/><br/>
+</div>
+<br/>
+
+</body>
+</html>
