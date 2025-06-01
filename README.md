@@ -19,4 +19,8 @@ Explore the live version here: [tomasoni-mobo.infinityfreeapp.com](https://tomas
 - JS
 
 ## Screenshots
-Include screenshots here to showcase the design.
+<img src="img/screenshot_1.png" alt="Contacts App Screenshot" style="width: 900px;"/>
+
+<img src="img/screenshot_2.png" alt="Contacts App Screenshot" style="width: 900px;"/>
+
+<img src="img/screenshot_3.png" alt="Contacts App Screenshot" style="width: 900px;"/>
